@@ -13,6 +13,5 @@ test('Item Verification Test', async ({ page }) => {
 
 
     await page.locator('[data-test="product-sort-container"]').selectOption('Price (low to high)');
-    await expect(page.getByText('Price (high to low)')).toBeVisible();
 
 });

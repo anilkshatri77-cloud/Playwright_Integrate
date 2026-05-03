@@ -20,4 +20,5 @@ test ('Dashboard Checkout', async({page}) => {
     await page.locator('#remove-sauce-labs-backpack').click();
 
     await page.waitForTimeout(5000);
+    
 });

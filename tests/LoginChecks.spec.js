@@ -5,6 +5,7 @@ test ('Valid Login Credential @smoke', async({page}) => {
     const login = new LoginPage(page);
     await page.goto('https://www.saucedemo.com/');
     await login.login('standard_user','secret_sauce');
+    await page.waitForTimeout(2000);
     await expect(page.getByText('Swag Labs')).toBeVisible();
 
 });

@@ -7,10 +7,6 @@ test('Item Verification Test', async ({ page }) => {
     await page.goto('https://www.saucedemo.com/');
     await login.login('standard_user', 'secret_sauce');
 
-    // await expect(page.getByText('Swag Labs')).toBeVisible();
-
-    //await page.locator('[data-test="footer-copy"]').scrollIntoViewIfNeeded();
-
 
     await page.locator('[data-test="product-sort-container"]').selectOption('Price (low to high)');
 

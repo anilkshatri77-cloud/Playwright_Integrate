@@ -7,8 +7,6 @@ test ('Login Demo Test', async({page}) => {
    await page.getByPlaceholder('Password').fill('secret_sauce');
    await page.getByRole('button', {type : 'submit'}).click();
 
-   
-
    await page.waitForTimeout(5000);
 
 });

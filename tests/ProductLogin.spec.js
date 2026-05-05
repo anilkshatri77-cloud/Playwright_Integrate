@@ -1,14 +1,14 @@
-import {test, expect} from '@playwright/test'
+import { test, expect } from '@playwright/test'
 
-test('Login Test', async({page}) => {
+test('Login Test', async ({ page }) => {
     await page.goto('https://www.demoblaze.com/');
 
-    await expect(page.getByRole('link',{name : 'Sign In'})).toBeVisible();
-    await page.getByRole('Link',{name : 'Sign In'}).click();
-    await expect(page.getByRole('header', {name : 'Sign In'})).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Sign up' })).toBeVisible();
+    await page.locator('#carouselExampleIndicators').getByRole('button', { name: 'Next' }).click();
+    await page.getByRole('link', { name: 'Sign up' }).click();
+    await expect(page.getByRole('heading', { name: 'Sign up' })).toBeVisible();
 
     await expect(page.getByLabel('Username:')).toBeVisible();
-    await expect()
 
     //span[normalize-space()='Flights']
 

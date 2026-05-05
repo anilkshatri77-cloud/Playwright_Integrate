@@ -1,7 +1,7 @@
-import{test, expect} from '@playwright/test'
-import { LoginPage } from '../page/LoginPage'
+import { test, expect } from '@playwright/test'
+import { LoginPage } from '../Page/LoginPage.js'
 
-test ('Dashboard Checkout', async({page}) => {
+test('Dashboard Checkout', async ({ page }) => {
     const login = new LoginPage(page);
     await page.goto('https://www.saucedemo.com/');
     await login.login('standard_user','secret_sauce');

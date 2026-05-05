@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { LoginPage } from '../page/LoginPage.js'
+import { LoginPage } from '../Page/LoginPage.js'
 
 test('Item Verification Test', async ({ page }) => {
 

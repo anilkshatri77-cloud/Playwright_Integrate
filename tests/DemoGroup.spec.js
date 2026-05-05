@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test')
+import { test, expect } from '@playwright/test'
 
 test.describe('Smoke Testing', () => {
 
@@ -9,14 +9,5 @@ test.describe('Smoke Testing', () => {
     test('Test2', async ({ page }) => {
     })
 });
-// test.describe('Sanity Testing', () => {
-//     //write a test3
-//     test('Test3', async ({ page }) => {
-//     })
-//     //Write a test4
-//     test('Test4', async ({ page }) => {
-//     })
-//     //Write a test5
-//     test('Test5', async ({ page }) => {
 //     })
 // });
